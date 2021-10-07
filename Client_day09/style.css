@@ -1,0 +1,80 @@
+:root {
+    --shadow:  0 4px 5px rgba(0, 0, 0, 0.256);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(202, 145, 38),rgb(150, 58, 150));
+}
+.container{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+/* Input Section */
+input{
+    border: none;
+    box-shadow: var(--shadow);
+    border-radius: 3px;
+    padding: 9px;
+    width: 400px;
+    outline: none;
+    color: rgba(41, 35, 35, 0.482);
+    background-color: whitesmoke;
+}
+
+/* Button Section */
+button{
+    background-color: rgb(202, 145, 38);
+    border: none;
+    width: 70px;
+    margin-left: 5px;
+    border-radius: 3px;
+    color: rgb(253, 244, 244);
+    box-shadow: var(--shadow);
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+button:hover{
+    color: rgb(202, 145, 38);;
+    background-color: #fff;
+}
+.details{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Card Section */
+section{
+    width: 100px;
+    height: 50px;
+    box-shadow: var(--shadow);
+    background-color: #fff;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+section:hover{
+    transform: translateY(-5px);
+}
